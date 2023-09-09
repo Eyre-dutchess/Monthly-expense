@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button class="add-new-btn" data-add-new-btn>Add New Month</button>
+    <div class="monthes" data-all-monthes>
+        <div class="month-container">
+            <form action="" class="name-form">
+                <input type="text" id="name-input" class="name-input">
+                <label for="name-input" class="name-label"></label>
+            </form>
+    
+            <div class="date-nav">
+                <!-- <ul class="date-list">
+                    <li class="date-item active" id="">01</li>
+                    <li class="date-item" id="">02</li>
+                </ul> -->
+                <!-- <form action="submit" class="date-form">
+                    <input type="text" class="date-input" placeholder="day">
+                    <button  class="add-new-date-btn"></button>
+                </form> -->
+            </div>
+    
+            <div class="expense-container" data-expense-container>
+                <form action="" class="expense-form" data-expense-form>
+                    <button class="add-new-expense"></button>
+                    <input type="text" class="expense-input" placeholder="add new expense" data-expense-input>
+                </form>
+                <ul class="daily-expense-list" data-daily-expense-container>
+                    <li class="daily-expense-item"></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
