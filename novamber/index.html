@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/bda5357418.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="month-container">
+        <div class="header-section">
+            <form action="submit" class="header-form" data-month-form>
+                <label for="title" class="header-label" data-month-name-output>month name: </label>
+                <input id="title" type="text" class="header-input" data-month-name-input>
+            </form>
+        </div>
+
+        <div class="date-section">
+            <ul class="date-list" data-date-list>
+                <li class="date-item active">01</li>
+                <li class="date-item">02</li>
+            </ul>
+            <form action="submit" class="date-form" data-date-form >
+                <input type="text" class="date-input" data-date-input>
+                <button class="add-date-btn" data-add-date-btn>
+                    <i class="fa fa-plus"></i>
+                </button>
+            </form>
+            <button class="del-date-btn" data-del-date-btn>
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+
+        <div class="detail-section">
+            <div class="detail-header">
+                <form action="submit" class="detail-form" data-detail-form>
+                    <label for="detail" class="detail-label"><i class="fa fa-plus"></i></label>
+                    <input id="detail" type="text" class="detail-input" data-detail-input>
+                </form>
+            </div>
+            <div class="detail-container" data-detail-container>
+                <ul class="detail-list" data-detail-list>
+                    <li class="detail-item">first</li>
+                    <li class="detail-item">first</li>
+                </ul>
+            </div>
+            <div class="detail-footer">
+                <button class="check-btn" data-check-btn><i class="fa fa-check"></i></button>
+                <div class="total-output" >
+                    Total: <span data-total-output>45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
