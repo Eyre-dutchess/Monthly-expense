@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="month-container">
+        <div class="header-section">
+            <form class="header-form" data-header-form>
+                <input id="header" type="text" class="header-input" data-header-input>
+                <label for="header" class="header-label" data-header-label></label>
+            </form>
+        </div>
+
+        <div class="date-section" data-date-section>
+            <ul class="date-list" data-date-list>
+                <li class="date-item"></li>
+            </ul>
+            <form action="submit" class="date-form" data-date-form>
+                <input type="text" class="date-input" data-date-input>
+                <button class="add-date-btn" data-add-date-btn><i class="fa fa-plus"></i></button>
+            </form>
+            <button class="del-date-btn" data-del-date-btn><i class="fa fa-minus"></i></button>
+        </div>
+
+        <div class="detail-section" data-detail-section>
+            <div class="detail-header">
+                <form action="submit" class="detail-form" data-detail-form>
+                    <input type="text" class="detail-input" data-detail-input>
+                    
+                </form>
+            </div>
+            <div class="detail-container">
+                <ul class="detail-list" data-detail-list>
+                    <li class="detail-item">taxi: 30</li>
+                </ul>
+            </div>
+            <div class="detail-footer">
+                <button class="check-btn" data-check-btn><i class="fa fa-check"></i></button>
+                <p class="total-output">Total: <span data-total-output></span></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
